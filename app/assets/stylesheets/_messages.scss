@@ -34,14 +34,24 @@
   justify-content: space-between;
 }
 
-.groups{
-  box-sizing: border-box;
-  margin: 0;
-  height: calc(100vh - 100px);
+.groups {
   background-color: #2f3e51;
-  padding: 20px 20px 0;
+  height: calc(100vh - 100px);
+  padding: 0 20px;
   overflow: scroll;
-  display:block;
+  .group {
+    box-sizing: border-box;
+    padding: 20px 0 40px;
+    &__name {
+      color: white;
+      font-size: 15px;
+    }
+    &__message {
+      color: white;
+      font-size: 11px;
+      margin-top: 5px;
+    }
+  }
 }
 
 .chat-main{
